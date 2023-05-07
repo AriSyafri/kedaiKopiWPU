@@ -150,12 +150,10 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laboriosam libero cupiditate, in sed nobis magni corporis aut ipsa provident!</p>
     
         <div class="row">
-            
-
             <div class="product-card">
                 <div class="products-icons">
                     <a href="#"><i data-feather="shopping-cart"></i></a>
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-image">
                     <img src="img/products/product2.jpg" alt="Product 1">
@@ -185,7 +183,7 @@
                 </div>
 
                 <div class="product-content">
-                    <h3>Coffee Beans 1</h3>
+                    <h3>Coffee Beans 2</h3>
                     <div class="product-stars">
                         <i data data-feather="star" class="star-full"></i>
                         <i data data-feather="star" class="star-full"></i>
@@ -207,7 +205,7 @@
                 </div>
 
                 <div class="product-content">
-                    <h3>Coffee Beans 1</h3>
+                    <h3>Coffee Beans 3</h3>
                     <div class="product-stars">
                         <i data data-feather="star" class="star-full"></i>
                         <i data data-feather="star" class="star-full"></i>
@@ -279,7 +277,32 @@
     </footer>
     <!-- footer end -->
 
+    <!-- modal box start item detail -->
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/products/product2.jpg" alt="Product 1">
+                <div class="product-content">
+                    <h3>Coffee Beans 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae modi at ab, possimus quisquam, aut, veniam maxime ipsum earum totam sunt id dicta! Pariatur.</p>
+                    <div class="product-stars">
+                        <i data data-feather="star" class="star-full"></i>
+                        <i data data-feather="star" class="star-full"></i>
+                        <i data data-feather="star"></i>
+                        <i data data-feather="star"></i>
+                        <i data data-feather="star"></i>
+                    </div>
+                    <div class="product-price">IDR 30k <span>IDR 55K</div>
+                    <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- modal box end -->
+
+    <!-- feather icons  -->
     <script>
         feather.replace()
     </script>

@@ -43,5 +43,28 @@ document.addEventListener('click',function(e){
     }
 });
 
+//modal box
+const itemDetailModal = document.querySelector('#item-detail-modal');
+const itemDetailButton = document.querySelector('.item-detail-button');
+
+itemDetailButton.onclick = (e) => {
+    itemDetailModal.style.display = 'flex';
+    e.preventDefault();
+};
+
+// klik tombol close modal
+document.querySelector('.modal .close-icon').onclick = (e) => {
+    itemDetailModal.style.display = 'none';
+    e.preventDefault();
+}
+
+// klik diluar modal
+const modal = document.querySelector('#item-detail-modal');
+window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
 
 
