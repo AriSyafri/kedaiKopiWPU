@@ -562,6 +562,12 @@ footer .credit a {
     padding: 1rem 1.5rem;
 }
 
+.modal .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
 
 
 /* media Queries */

@@ -45,12 +45,17 @@ document.addEventListener('click',function(e){
 
 //modal box
 const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButton = document.querySelector('.item-detail-button');
+const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
-itemDetailButton.onclick = (e) => {
-    itemDetailModal.style.display = 'flex';
-    e.preventDefault();
-};
+itemDetailButtons.forEach((btn) => {
+    btn.onclick = (e) => {
+        itemDetailModal.style.display = 'flex';
+        e.preventDefault();
+    };
+
+});
+
+
 
 // klik tombol close modal
 document.querySelector('.modal .close-icon').onclick = (e) => {
@@ -59,12 +64,11 @@ document.querySelector('.modal .close-icon').onclick = (e) => {
 }
 
 // klik diluar modal
-const modal = document.querySelector('#item-detail-modal');
 window.onclick = (e) => {
-    if (e.target === modal) {
-        modal.style.display = 'none';
+    if (e.target === itemDetailModal) {
+        itemDetailModal.style.display = 'none';
     }
-}
+};
 
 
 
